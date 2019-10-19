@@ -7,18 +7,22 @@
     <link rel="stylesheet" type="text/css" href="simple-grid.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body class="text dark">
+<body class="[ text dark ]">
+    
     <header class="[ section top-1 ]">
-        <h1 class="[ title h1 ][ inline-block right-1 ]">Nirmal Lankathilaka</h1>
-        <div class="[ tag-wrapper ][ top-1 ]" style="width: 190px;"><span class="tag" style="width: 190px;">Senior software engineer</span></div>
+        <h1 class="[ title h1 bold ][ inline-block right-1 ]">Nirmal Lankathilaka</h1>
+        <div class="[ tag-wrapper ][ top-1 ]" style="width: 190px;"><span class="tag bold" style="width: 190px;">Senior software engineer</span></div>
     </header>
+    
     <section class="section light top-1">
-        <a href="linkedin.com/in/nirmall" class="[ gray a ][ right-1 ]">linkedin.com/in/nirmall</a>
+        <a href="https://linkedin.com/in/nirmall" class="[ gray a ][ right-1 ]">linkedin.com/in/nirmall</a>
         <a href="mailto:nir@nirlanka.com" class="[ gray a ]">nir@nirlanka.com</a>
     </section>
+    
     <section class="[ normal ][ section top-1 ]">
         <p class="thin desc">A computer engineering graduate from the University of Peradeniya with more than 3 years of experience in full-stack development & design for mobile, web, desktop applications & APIs.</p>
     </section>
+    
     <section class="[ section timeline ][ top-2 row10 ]">
         <div class="col10-2 timeline-item">
             <div class="timeline-graphic">
@@ -77,5 +81,36 @@
             </div>
         </div>
     </section>
+    
+    <section class="[ section key-tech-exp top-2 ][ row10 ]">
+        <div class="col10-2 flex-col"><h2 class="title bold dark bottom-1">Key technology experience</h2></div>
+        <div class="col10-8 tag-list" id="key-tech-exp-list">
+            <temp><div class="tag inline-block">{}</div></temp>
+            <script>(() => {
+                const tags = 'Javascript, C#, Angular, React Native, MongoDB, NodeJS, ASP.NET WebApi2, Linux, WPF, Ionic, Python, Unity game engine, Microsoft SQL';
+                
+                const template = document.querySelector('#key-tech-exp-list temp').innerHTML;
+                
+                document.querySelector('#key-tech-exp-list').innerHTML = tags.split(', ').map(t => template.replace('{}', t)).join(' ');
+            })()</script>
+        </div>
+    </section>
+    
+    <section class="[ section additional-tech-exp top-2 ][ row10 ]">
+        <div class="col10-2 flex-col"><h2 class="title bold dark bottom-1">Additional experience</h2></div>
+        <div class="col10-8 tag-list" id="additional-tech-exp-list">
+            <temp><div class="[ tag tag-lighter ][ inline-block ]">{}</div></temp>
+            <script>(() => {
+                const tags = 'UX, Typescript, Linux, WebTorrent, WebRTC, web security, compiler design, GraphQL, chat bots, Coffeescript, augmented reality, evolutionary algorithms';
+                
+                const template = document.querySelector('#additional-tech-exp-list temp').innerHTML;
+                
+                document.querySelector('#additional-tech-exp-list').innerHTML = tags.split(', ').map(t => template.replace('{}', t)).join(' ');
+            })()</script>
+        </div>
+    </section>
+    
+    <div class="bottom-2">&nbsp;</div>
+    
 </body>
 </html>
