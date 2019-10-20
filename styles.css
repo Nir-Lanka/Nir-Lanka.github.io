@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:200,300,400&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:200,300,400,500,600,700,900|Roboto:200,300,400,500,600,700,900&display=swap&subset=latin-ext');
 
 /* VARIABLES --> */
 
@@ -30,20 +30,26 @@ body {
     font-weight: 400;
 }
 
-.dark {
+.dark,
+.dark * {
     color: var(--dark);
 }
-.gray {
+.gray,
+.gray * {
     color: var(--light);
 }
-.dark-blue {
+.dark-blue,
+.dark-blue * {
     color: var(--dark-blue);
 }
-.dark-purple {
+.dark-purple,
+.dark-purple *{
     color: var(--dark-purple);
 }
 
-.bold { font-weight: 700; }
+.black { font-weight: 700; }
+.bold { font-weight: 600; }
+.medium { font-weight: 500; }
 .normal { font-weight: 400; }
 .thin { font-weight: 300; }
 .light { font-weight: 200; }
@@ -73,6 +79,17 @@ body {
 
 .h1 {
     font-size: 2.5em;
+}
+.h2 {
+    font-size: 2.5em;
+}
+.h3 {
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+.font-2 {
+    font-size: 1.2em;
 }
 
 .desc {
@@ -171,26 +188,24 @@ body {
 
 /* 10-COLUMN GRID --> */
 
-.row10 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .row10 > * {
     display: inline-block;
     vertical-align: top;
+    width: 100%;
+}
+
+@media screen and (min-width: 700px) { .row10 > .col10-1 { width: 9%; } }
+@media screen and (min-width: 700px) { .row10 > .col10-2 { width: 19%; } }
+@media screen and (min-width: 700px) { .row10 > .col10-3 { width: 29%; } }
+@media screen and (min-width: 700px) { .row10 > .col10-4 { width: 39%; } }
+@media screen and (min-width: 700px) { .row10 > .col10-5 { width: 49%; } }
+@media screen and (min-width: 700px) { .row10 > .col10-6 { width: 59%; } }
+@media screen and (min-width: 700px) { .row10 > .col10-7 { width: 69%; } }
+@media screen and (min-width: 700px) { .row10 > .col10-8 { width: 79%; } }
+@media screen and (min-width: 700px) { .row10 > .col10-9 { width: 89%; } }
+
+.row10 > * {
     min-width: 150px;
-}
-
-.row10 > .col10-2 {
-    width: 19%; /* ~ 20% = 100% x 2/10 */
-}
-.row10 > .col10-8 {
-    width: 79%; /* ~ 20% = 100% x 2/10 */
-}
-
-.flex-col {
-    flex: 1 1 160px;
 }
 
 /* <-- 10-COLUMN GRID */
