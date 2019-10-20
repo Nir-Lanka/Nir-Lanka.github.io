@@ -125,13 +125,75 @@
     
     <div class="top-2 row10">
         
+        <section class="[ section sidebar ][ col10-3 bottom-1 ]">
+            <h3 class="title medium font-2 bottom-1">Career status</h3>
+            
+            <div id="career-status-list">
+                <temp>
+                    <div class="p">
+                        <div class="inline-block min-w-100 title dark-purple bold">{}</div>
+                        <div class="inline-block min-w-200 break-words">{}</div>
+                    </div>
+                </temp>
+                <script>repeatTemplate('career-status-list', [
+                    ['Role', 'Senior software engineer'],
+                    ['Degree', 'BSc. (computer engineering)']
+                ])</script>
+            </div>
+            
+            <h3 class="title medium font-2 top-1 bottom-1">Links</h3>
+            
+            <div id="web-links-list">
+                <temp>
+                    <div class="p">
+                        <div class="inline-block min-w-100 max-w-100 title dark-purple bold">{}</div>
+                        <div class="inline-block min-w-200 max-w-200 break-words">
+                            <a href="{}" class="a inline">{}</a>
+                        </div>
+                    </div>
+                </temp>
+                <script>repeatTemplate('web-links-list', [
+                    ['E-mail', 'mailto:nir@nirlanka.com', 'https://nirlanka.com'],
+                    ['LinkedIn', 'linkedin.com/in/nirmall', 'https://linkedin.com/in/nirmall'],
+                    ['GitHub', 'github.com/nirlanka', 'https://github.com/nirlanka'],
+                    ['Website', 'nirlanka.com', 'https://nirlanka.com'],
+                    ['Blog', 'https://evildino.com', 'evildino.com'],
+                    ['Stack Overflow', 'stackoverflow.com/users/1056055/nirmall', 'stackoverflow.com/users/1056055/nirmall'],
+                ])</script>
+            </div>
+            
+            <h3 class="title medium font-2 top-1 bottom-1">Personal info.</h3>
+            
+            <div id="personal-info-list">
+                <temp>
+                    <div class="p">
+                        <div class="inline-block min-w-100 title dark-purple bold">{}</div>
+                        <div class="inline-block min-w-200 max-w-200 break-words">{}</div>
+                    </div>
+                </temp>
+                <script>repeatTemplate('personal-info-list', [
+                    [
+                        'Address', 
+                        `No. 191,<br>
+                        Thambagalla waththa,<br>
+                        Panirendawa,<br>
+                        Sri Lanka,<br>
+                        61234`
+                    ],
+                    ['Phone', '+35 '],
+                    ['Date of birth', '1992-07-09']
+                ])</script>
+            </div>
+            
+        </section>
+        
         <section class="[ section ][ col10-7 bottom-1 ]">
             <div class="row10">
-                <div class="col-2"><h2 class="title medium dark font-2 bottom-1">Work experience</h2></div>
+                <div class="col-2"><h2 class="title medium dark font-2">Work experience</h2></div>
             </div>
             <div class="row10 nested">
                 <div class="col10-2">
-                    <div class="dark-blue title">2017 &mdash; present</div>
+                    <div class="dark-blue title top-1">2017 &mdash; present</div>
                 </div>
                 <div class="col10-8">
                     <h3 class="h3 title dark-blue">
@@ -179,68 +241,6 @@
                     </ul>
                 </div>
             </div>
-        </section>
-        
-        <section class="[ section sidebar ][ col10-3 ]">
-            <h3 class="title medium font-2 top-1 bottom-1">Career status</h3>
-            
-            <div id="career-status-list">
-                <temp>
-                    <div class="p">
-                        <div class="inline-block min-w-100 title dark-purple bold">{}</div>
-                        <div class="inline-block min-w-200 break-words">{}</div>
-                    </div>
-                </temp>
-                <script>repeatTemplate('career-status-list', [
-                    ['Role', 'Senior software engineer'],
-                    ['Degree', 'BSc. (computer engineering)']
-                ])</script>
-            </div>
-            
-            <h3 class="title medium font-2 top-1 bottom-1">Links</h3>
-            
-            <div id="web-links-list">
-                <temp>
-                    <div class="p">
-                        <div class="inline-block min-w-100 max-w-100 title dark-purple bold">{}</div>
-                        <div class="inline-block min-w-200 max-w-200 break-words">
-                            <a href="{}" class="a inline">{}</a>
-                        </div>
-                    </div>
-                </temp>
-                <script>repeatTemplate('web-links-list', [
-                    ['E-mail', 'mailto:nir@nirlanka.com', 'https://nirlanka.com'],
-                    ['LinkedIn', 'linkedin.com/in/nirmall', 'https://linkedin.com/in/nirmall'],
-                    ['GitHub', 'github.com/nirlanka', 'https://github.com/nirlanka'],
-                    ['Website', 'nirlanka.com', 'https://nirlanka.com'],
-                    ['Blog', 'https://evildino.com', 'evildino.com'],
-                    ['Stack Overflow', 'stackoverflow.com/users/1056055/nirmall', 'stackoverflow.com/users/1056055/nirmall'],
-                ])</script>
-            </div>
-            
-            <h3 class="title medium font-2 top-1 bottom-1">Personal info.</h3>
-            
-            <div id="personal-info-list">
-                <temp>
-                    <div class="p">
-                        <div class="inline-block min-w-100 title dark-purple bold">{}</div>
-                        <div class="inline-block min-w-200 break-words">{}</div>
-                    </div>
-                </temp>
-                <script>repeatTemplate('personal-info-list', [
-                    [
-                        'Address', 
-                        `No. 191,
-                        Thambagalla waththa,
-                        Panirendawa,
-                        Sri Lanka,
-                        61234`
-                    ],
-                    ['Phone', '+35 '],
-                    ['Date of birth', '1992-07-09']
-                ])</script>
-            </div>
-            
         </section>
         
     </div>
