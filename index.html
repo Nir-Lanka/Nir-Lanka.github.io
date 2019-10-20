@@ -9,10 +9,20 @@
 </head>
 <body class="[ text dark ]">
     <script>
-        function fillTemplate(id, tags) {
+        function fillFromList(id, tags) {
             const template = document.querySelector(`#${id} temp`).innerHTML;
 
             document.querySelector(`#${id}`).innerHTML = tags.split(', ').map(t => template.replace('{}', t)).join(' ');
+        }
+        
+        function repeatTemplate(id, groups) {
+            const template = document.querySelector(`#${id} temp`).innerHTML;
+            
+            document.querySelector(`#${id}`).innerHTML = groups.map(g => {
+                let html = template.substr(0);
+                g.forEach(t => html = html.replace('{}', t));
+                return html;
+            }).join(' ');
         }
     </script>
     
@@ -93,7 +103,7 @@
         <div class="col10-2"><h2 class="title medium dark font-2 bottom-1">Key technology experience</h2></div>
         <div class="col10-8 tag-list" id="key-tech-exp-list">
             <temp><div class="tag inline-block">{}</div></temp>
-            <script>fillTemplate('key-tech-exp-list', 'Javascript, C#, Angular, React Native, MongoDB, NodeJS, ASP.NET WebApi2, Linux, WPF, Ionic, Python, Unity game engine, Microsoft SQL')</script>
+            <script>fillFromList('key-tech-exp-list', 'Javascript, C#, Angular, React Native, MongoDB, NodeJS, ASP.NET WebApi2, Linux, WPF, Ionic, Python, Unity game engine, Microsoft SQL')</script>
         </div>
     </section>
     
@@ -101,13 +111,13 @@
         <div class="col10-2"><h2 class="title medium dark font-2 bottom-1">Additional experience</h2></div>
         <div class="col10-8 tag-list" id="additional-tech-exp-list">
             <temp><div class="[ tag tag-lighter ][ inline-block ]">{}</div></temp>
-            <script>fillTemplate('additional-tech-exp-list', 'UX, Typescript, Linux, WebTorrent, WebRTC, web security, compiler design, GraphQL, chat bots, Coffeescript, augmented reality, evolutionary algorithms')</script>
+            <script>fillFromList('additional-tech-exp-list', 'UX, Typescript, Linux, WebTorrent, WebRTC, web security, compiler design, GraphQL, chat bots, Coffeescript, augmented reality, evolutionary algorithms')</script>
         </div>
     </section>
     
     <div class="top-2 row10">
         
-        <section class="[ section ][ col10-7 bottom-2 ]">
+        <section class="[ section ][ col10-7 bottom-1 ]">
             <div class="row10">
                 <div class="col-2"><h2 class="title medium dark font-2 bottom-1">Work experience</h2></div>
             </div>
@@ -123,7 +133,7 @@
                     
                     <div id="microbuild-tech-exp-list" class="tag-list top-1 bottom-1">
                         <temp><div class="[ tag ][ inline-block ]">{}</div></temp>
-                        <script>fillTemplate('microbuild-tech-exp-list', 'Angular, ASP.NET WebApi2, MongoDB, Azure')</script>
+                        <script>fillFromList('microbuild-tech-exp-list', 'Angular, ASP.NET WebApi2, MongoDB, Azure')</script>
                     </div>
                     
                     <p class="p">Suite of web, mobile & desktop apps for door design, assembly, maintenance and collaboration in large-scale constructions.</p>
@@ -161,13 +171,39 @@
         
         <section class="[ section sidebar ][ col10-3 ]">
             <h3 class="title medium font-2 top-1 bottom-1">Career status</h3>
-            <div>
-                <div class="inline-block w-100 title dark-purple bold">Role</div>
-                <div class="inline-block w-200">Senior software engineer</div>
+            
+            <div id="career-status-list">
+                <temp>
+                    <div>
+                        <div class="inline-block min-w-100 title dark-purple bold">{}</div>
+                        <div class="inline-block min-w-200 break-words">{}</div>
+                    </div>
+                </temp>
+                <script>repeatTemplate('career-status-list', [
+                    ['Role', 'Senior software engineer'],
+                    ['Degree', 'BSc. (computer engineering)']
+                ])</script>
             </div>
-            <div>
-                <div class="inline-block w-100 title dark-purple bold">Degree</div>
-                <div class="inline-block w-200">BSc. (computer engineering) </div>
+            
+            <h3 class="title medium font-2 top-1 bottom-1">Links</h3>
+            
+            <div id="web-links-list">
+                <temp>
+                    <div>
+                        <div class="inline-block min-w-100 max-w-100 title dark-purple bold">{}</div>
+                        <div class="inline-block min-w-200 max-w-200 break-words">
+                            <a href="{}" class="a">{}</a>
+                        </div>
+                    </div>
+                </temp>
+                <script>repeatTemplate('web-links-list', [
+                    ['E-mail', 'mailto:nir@nirlanka.com', 'https://nirlanka.com'],
+                    ['LinkedIn', 'linkedin.com/in/nirmall', 'https://linkedin.com/in/nirmall'],
+                    ['GitHub', 'github.com/nirlanka', 'https://github.com/nirlanka'],
+                    ['Website', 'nirlanka.com', 'https://nirlanka.com'],
+                    ['Blog', 'https://evildino.com', 'evildino.com'],
+                    ['Stack Overflow', 'stackoverflow.com/users/1056055/nirmall', 'stackoverflow.com/users/1056055/nirmall'],
+                ])</script>
             </div>
             
         </section>
