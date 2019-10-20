@@ -58,7 +58,10 @@ body {
     display: block;
     padding: 0 1em;
 }
-.inline-block { display: inline-block; }
+.inline-block { 
+    display: inline-block; 
+    vertical-align: top;
+}
 .block { display: block; }
 
 .top-1 { margin-top: 1rem; }
@@ -67,6 +70,9 @@ body {
 
 .top-2 { margin-top: 2rem; }
 .bottom-2 { padding-bottom: 2rem; }
+
+.w-100 { min-width: 100px; }
+.w-200 { min-width: 200px; }
 
 /* <-- UTILS */
 
@@ -86,6 +92,24 @@ body {
 .h3 {
     font-size: 1.5em;
     line-height: 1em;
+}
+.h4 {
+    line-height: 1.2em;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.p {
+    margin: .5rem 0;
+}
+
+.ul li:before {
+    content: "—";
+    margin-right: .4rem;
+}
+.ul li {
+    line-height: 1.4rem;
 }
 
 .font-2 {
@@ -194,18 +218,28 @@ body {
     width: 100%;
 }
 
-@media screen and (min-width: 700px) { .row10 > .col10-1 { width: 9%; } }
-@media screen and (min-width: 700px) { .row10 > .col10-2 { width: 19%; } }
-@media screen and (min-width: 700px) { .row10 > .col10-3 { width: 29%; } }
-@media screen and (min-width: 700px) { .row10 > .col10-4 { width: 39%; } }
-@media screen and (min-width: 700px) { .row10 > .col10-5 { width: 49%; } }
-@media screen and (min-width: 700px) { .row10 > .col10-6 { width: 59%; } }
-@media screen and (min-width: 700px) { .row10 > .col10-7 { width: 69%; } }
-@media screen and (min-width: 700px) { .row10 > .col10-8 { width: 79%; } }
-@media screen and (min-width: 700px) { .row10 > .col10-9 { width: 89%; } }
+@media screen and (min-width: 770px) { .row10:not(.nested) > .col10-1 { width: 9%; } }
+@media screen and (min-width: 770px) { .row10:not(.nested) > .col10-2 { width: 19%; } }
+@media screen and (min-width: 770px) { .row10:not(.nested) > .col10-3 { width: 29%; } }
+@media screen and (min-width: 770px) { .row10:not(.nested) > .col10-4 { width: 39%; } }
+@media screen and (min-width: 770px) { .row10:not(.nested) > .col10-5 { width: 49%; } }
+@media screen and (min-width: 770px) { .row10:not(.nested) > .col10-6 { width: 59%; } }
+@media screen and (min-width: 770px) { .row10:not(.nested) > .col10-7 { width: 69%; } }
+@media screen and (min-width: 770px) { .row10:not(.nested) > .col10-8 { width: 79%; } }
+@media screen and (min-width: 770px) { .row10:not(.nested) > .col10-9 { width: 89%; } }
 
-.row10 > * {
+.row10:not(.nested) > * {
     min-width: 150px;
 }
+
+@media screen and (min-width: 1109px) { .row10.nested > .col10-1 { width: 9%; } }
+@media screen and (min-width: 1109px) { .row10.nested > .col10-2 { width: 19%; } }
+@media screen and (min-width: 1109px) { .row10.nested > .col10-3 { width: 29%; } }
+@media screen and (min-width: 1109px) { .row10.nested > .col10-4 { width: 39%; } }
+@media screen and (min-width: 1109px) { .row10.nested > .col10-5 { width: 49%; } }
+@media screen and (min-width: 1109px) { .row10.nested > .col10-6 { width: 59%; } }
+@media screen and (min-width: 1109px) { .row10.nested > .col10-7 { width: 69%; } }
+@media screen and (min-width: 1109px) { .row10.nested > .col10-8 { width: 79%; } }
+@media screen and (min-width: 1109px) { .row10.nested > .col10-9 { width: 89%; } }
 
 /* <-- 10-COLUMN GRID */
