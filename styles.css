@@ -83,6 +83,10 @@ body {
     vertical-align: middle; 
 }
 
+.invisible {
+    color: transparent;
+}
+
 /* <-- UTILS */
 
 /* COMMON --> */
