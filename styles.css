@@ -74,6 +74,15 @@ body {
 
 .break-words { word-break: break-all; }
 
+.vertical-bottom { 
+    display: inline-block;
+    vertical-align: bottom; 
+}
+.vertical-middle { 
+    display: inline-block;
+    vertical-align: middle; 
+}
+
 /* <-- UTILS */
 
 /* COMMON --> */
