@@ -63,6 +63,7 @@ body {
     vertical-align: top;
 }
 .block { display: block; }
+.inline { display: inline; }
 
 .top-1 { margin-top: 1rem; }
 .right-1 { margin-right: 1rem; }
@@ -71,13 +72,7 @@ body {
 .top-2 { margin-top: 2rem; }
 .bottom-2 { padding-bottom: 2rem; }
 
-.min-w-100 { min-width: 100px; }
-.min-w-200 { min-width: 200px; }
-
-.max-w-100 { max-width: 100px; }
-.max-w-200 { max-width: 200px; }
-
-.break-words { word-break:break-all; }
+.break-words { word-break: break-all; }
 
 /* <-- UTILS */
 
@@ -246,5 +241,14 @@ body {
 @media screen and (min-width: 1109px) { .row10.nested > .col10-7 { width: 69%; } }
 @media screen and (min-width: 1109px) { .row10.nested > .col10-8 { width: 79%; } }
 @media screen and (min-width: 1109px) { .row10.nested > .col10-9 { width: 89%; } }
+
+.min-w-100 { min-width: 100px; }
+.min-w-200 { min-width: 200px; }
+
+@media screen and (min-width: 770px) {
+    .max-w-100 { max-width: 100px; }
+    .max-w-200 { max-width: 200px; }
+}
+
 
 /* <-- 10-COLUMN GRID */
