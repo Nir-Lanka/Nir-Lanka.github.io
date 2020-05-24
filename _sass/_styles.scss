@@ -3,6 +3,11 @@
     list-style: none;
 }
 
-.tags__tag {
-    color: #999999;
+.index__posts-list__post-title--link,
+.tag__posts-list__post-title--link {
+    ::after {
+        content: '[off-site]';
+        font-size: 1.03rem;
+        font-weight: 500;
+    }
 }

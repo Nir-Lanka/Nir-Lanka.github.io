@@ -12,13 +12,11 @@ layout: default
     {% for post in site.posts %}
       <li>
         {% if post.redirect_to %}
-          <h2>
+          <h2 class="index__posts-list__post-title--link">
             <a href="{{ post.redirect_to }}">
               {{ post.title }}
             </a>
           </h2>
-          <span>(external link)</span>
-          
         {% else %}
           <h2>
             <a href="{{ post.url }}">

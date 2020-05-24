@@ -7,4 +7,4 @@ hide_title: true
 
 # Nir's tech blog
 
-Welcome to my blog on tech stuff!
+はじめました。Welcome to my blog on tech stuff!
