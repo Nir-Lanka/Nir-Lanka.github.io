@@ -12,15 +12,18 @@
     {% endif %}
   </head>
   <body>
-    <div>
+    <div class="nav">
       {% if page.id != 'index' %}
         <a href="{{ site.baseurl }}/">← Home</a>
       {% endif %}
       {% if page.id != 'about' %}
         <a href="{{ site.baseurl }}/about.html">About</a>
       {% endif %}
-      <a class="nav__theme-btn" href="javascript:void(0)" id="btn-theme">Dark↔light</a>
+      <div class="nav__right-group">
+        <a class="nav__theme-btn" href="javascript:void(0)" id="btn-theme">Dark↔light</a>
+      </div>
     </div>
+
     <div class="content">
       {% if page.hide_title == true %}
       {% elsif page.layout == 'post' %}
