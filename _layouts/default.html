@@ -28,6 +28,7 @@
     <div class="content">
       {% if page.hide_title == true %}
       {% elsif page.layout == 'post' %}
+      {% elsif page.layout == 'tag' %}
       {% else %}
         <h1>{{ page.title }}</h1>
       {% endif %}
