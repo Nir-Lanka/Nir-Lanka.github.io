@@ -1,0 +1,30 @@
+---
+layout: default
+hide_title: true
+---
+
+<h1>#{{ page.tag }}</h1>
+
+<ul class="tag__posts-list">
+{% for post in site.tags[page.tag] %}
+    <li>
+        {% if post.redirect_to %}
+        <a href="{{ post.redirect_to }}">
+            <h2>{{ post.title }}</h2>
+            <span>(external link)</span>
+        </a>
+        {% else %}
+        <a href="{{ post.url }}">
+            <h2>{{ post.title }}</h2>
+        </a>
+        {% endif %}
+        
+        {% if post.desc %}
+            <p>{{ post.desc }}</p>
+        {% else %}
+            {{ post.excerpt }}
+        {% endif %}
+        <div>{% include posttags.html %}</div>
+    </li>
+{% endfor %}
+</ul>
