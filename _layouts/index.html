@@ -4,4 +4,8 @@ layout: default
 
 {{ content }}
 
-{% include postlist.html %}
+<ul class="posts-list">
+    {% for post in site.posts %}
+        {% include post-list-item.html %}
+    {% endfor %}
+</ul>
