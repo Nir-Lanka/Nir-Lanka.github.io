@@ -3,11 +3,12 @@ id: about
 layout: default
 title: About
 hide_title: true
+published: true
 ---
 
 # About <strong>Nir Lanka</strong>
 
-I'm a hacker and artist, experimenting in different technologies and paradigms, including Javascript, compiler design, game design and development, and distributed information.
+I'm a hacker and an artist, experimenting in different technologies and paradigms, including Javascript, compiler design, game design and development, and distributed information.
 
 ## Interests
 
