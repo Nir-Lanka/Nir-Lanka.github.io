@@ -11,10 +11,11 @@ I'm a hacker and artist, experimenting in different technologies and paradigms, 
 
 ## Interests
 
-- Compiler design/Lisp
-- Game development (3D)
-- Design/illustrations/creative-coding
 - Javascript/NodeJS/Deno/WebAssembly
+- Compiler design/Lisp
+- Design/illustrations/creative-coding
+- Game development
+- Art/music
 
 ## Career
 

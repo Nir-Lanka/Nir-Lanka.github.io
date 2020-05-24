@@ -21,7 +21,15 @@
       {% endif %}
       <a class="nav__theme-btn" href="javascript:void(0)" id="btn-theme">Dark↔light</a>
     </div>
-    <div class="content">{{ content}}</div>
+    <div class="content">
+      {% if page.hide_title == true %}
+      {% elsif page.layout == 'post' %}
+      {% else %}
+        <h1>{{ page.title }}</h1>
+      {% endif %}
+
+      {{ content}}
+    </div>
     
     <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
   </body>

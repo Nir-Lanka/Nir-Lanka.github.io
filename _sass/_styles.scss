@@ -1,10 +1,8 @@
-.index__posts-list,
-.tag__posts-list {
+.posts-list {
     list-style: none;
 }
 
-.index__posts-list__post-title--link,
-.tag__posts-list__post-title--link {
+.posts-list__post-title--link {
     ::after {
         content: '[off-site]';
         font-size: 1.03rem;
@@ -21,4 +19,8 @@
 .post__time {
     display: block;
     margin: 10px 0 0 0;
+}
+
+.posts-list__post p {
+    margin-bottom: 10px;
 }
