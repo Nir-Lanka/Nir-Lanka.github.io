@@ -6,7 +6,7 @@ hide_title: true
 <h1>#{{ page.tag }}</h1>
 
 <ul class="tag__posts-list">
-    {% for post in site.posts %}
+    {% for post in site.tags[page.tag] %}
     <li>
       {% if post.redirect_to %}
         <h2 class="tag__posts-list__post-title--link">
