@@ -10,6 +10,8 @@ published: true
 
 I'm a hacker and an artist, experimenting in different technologies and paradigms, including Javascript, compiler design, game design and development, and distributed information.
 
+[Dev.to](https://dev.to/nirlanka){:target="_blank"}, [GitHub](https://github.com/nirlanka/){:target="_blank"}, [Gitter](https://gitter.im/nirlanka/community){:target="_blank"}, [LinkedIn](https://www.linkedin.com/in/nirlanka/){:target="_blank"}
+
 ## Interests
 
 - Javascript/NodeJS/Deno/WebAssembly
