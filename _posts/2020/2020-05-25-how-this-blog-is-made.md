@@ -18,7 +18,7 @@ So I took a different approach with this redesign. Instead of designing an intri
 
 I used [New.css](https://newcss.net/){:target="_blank"} in its default colors and appearance (mostly). New.css is a CSS file that aims to make a simple CSS-less website look appealing by having better looking defaults than browser defaults. This concept and result is very appealing to me.
 
-The only major design change I did on top of it was to add some overrding CSS code to change the `<anchor></>` underlines. I used `background-image` styling to get the current link underlining effect that I'm very satisfied with.
+The only major design change I did on top of it was to add some overrding CSS code to change the `<a></a>` underlines. I used `background-image` styling to get the current link underlining effect that I'm very satisfied with.
 
 New.css also comes with an automatic dark mode through CSS variables, if the browser says it's preferred. I added a little bit of JavaScript to enable flipping it on user demand, and store it in `sessionStorage`.
 
