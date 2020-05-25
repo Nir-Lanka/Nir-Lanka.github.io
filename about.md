@@ -47,7 +47,7 @@ Main areas: Software engineering, evolutionary algorithms, mobile development, d
 
 I worked as a designer and developer on front-end and back-end.
 
-Technologies: NodeJS, JQuery, PHP, MongoDB, MySQL.
+Technologies: NodeJS, jQuery, PHP, MongoDB, MySQL.
 
 ## Products
 
@@ -58,4 +58,4 @@ Technologies: NodeJS, JQuery, PHP, MongoDB, MySQL.
 2017 (for independent vendor)
 
 ### Ongoing LK
-2017 (for DevMutant)
+2017 (for DevMutants)
