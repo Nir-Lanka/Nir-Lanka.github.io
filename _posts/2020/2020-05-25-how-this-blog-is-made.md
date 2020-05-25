@@ -14,7 +14,7 @@ I love designing minimalist, yet beautiful and feature-full websites. But I was 
 
 So I took a different approach with this redesign. Instead of designing an intricate layout and appearance, or going with someone else's design, I went with the bare minimum, as well as hoping to get easier accessibility to publishing ideas:
 
-## New.css, SCSS, theme stored in `sessionStorage`
+## New.css, SCSS, theme stored in sessionStorage
 
 I used [New.css](https://newcss.net/){:target="_blank"} in its default colors and appearance (mostly). New.css is a CSS file that aims to make a simple CSS-less website look appealing by having better looking defaults than browser defaults. This concept and result is very appealing to me.
 
