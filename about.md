@@ -23,19 +23,19 @@ I'm a hacker and an artist, experimenting in different technologies and paradigm
 ## Career
 
 ### Consulting engineer, specializing in front-end
-2020 → current (SGX - [Singapore Exchange](https://www.sgx.com/), Singapore)
+2020 → current (SGX - [Singapore Exchange](https://www.sgx.com/){:target="_blank"}, Singapore)
 
 ### Senior software engineer
-2017 → 2019 ([Embla Software Innovation](https://embla.asia/), Sri Lanka - Norway)
+2017 → 2019 ([Embla Software Innovation](https://embla.asia/){:target="_blank"}, Sri Lanka - Norway)
 
-I worked for [Dørteknikk AS](http://www.dorteknikk.no/) (Norway) to design, develop and maintain a software suite of web, mobile and desktop applications, called [MicroBuild](https://www.microbuild.no/).
+I worked for [Dørteknikk AS](http://www.dorteknikk.no/){:target="_blank"} (Norway) to design, develop and maintain a software suite of web, mobile and desktop applications, called [MicroBuild](https://www.microbuild.no/){:target="_blank"}.
 
 Technologies: Angular, WPF, Ionic Stencil, NodeJS, Ionic, MongoDB, React Native.
 
 ### Associate software engineer
-2015 → 2016 ([99x Technology](https://www.99xtechnology.com/), Sri Lanka - Norway)
+2015 → 2016 ([99x Technology](https://www.99xtechnology.com/){:target="_blank"}, Sri Lanka - Norway)
 
-I worked for [Boligmappa AS](https://www.boligmappa.no/), a suite of web and mobile apps for tracking, management and document-gathering of electrical appliances for Norwegian homes and buildings.
+I worked for [Boligmappa AS](https://www.boligmappa.no/){:target="_blank"}, a suite of web and mobile apps for tracking, management and document-gathering of electrical appliances for Norwegian homes and buildings.
 
 Technologies: AngularJS, NodeJS, ASP.NET WebApi2, Microsoft SQL.
 
@@ -53,7 +53,7 @@ Technologies: NodeJS, jQuery, PHP, MongoDB, MySQL.
 
 ## Products
 
-### [Anantara AR Experience](https://apps.apple.com/us/app/anantara-ar-experience/id1474047633)
+### [Anantara AR Experience](https://apps.apple.com/us/app/anantara-ar-experience/id1474047633){:target="_blank"}
 2019 (for Triolly Pvt Ltd)
 
 ### Donate LK
