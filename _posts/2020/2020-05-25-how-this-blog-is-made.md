@@ -30,6 +30,8 @@ I love Prose.io. It's a free service that lets you access your GitHub repos and 
 
 ## Syntax highlighting
 
-I add code snippets with the 3-backtick notation with the language id label `(```js ... ```)`. I have added a Monokai CSS theme for the default syntax highlighter in Jekyll by simply including a `monokai.css` which just overrides syntax highlighting styles.
+I add code snippets with the 3-backtick notation with the language id label added next to the starting backticks.
+
+I have added a Monokai CSS theme for the default syntax highlighter in Jekyll by simply including a `monokai.css` which just overrides syntax highlighting styles.
 
 That's about it! If there's any questions, fire me a message on my [Gitter](https://gitter.im/nirlanka/community){:target="_blank"} "chatroom". :D
